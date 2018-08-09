@@ -43,6 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Classes\Dog.cs" />
+    <Compile Include="Models\Classes\Dolphin.cs" />
+    <Compile Include="Models\Classes\Shark.cs" />
+    <Compile Include="Models\Classes\Tarantula.cs" />
+    <Compile Include="Models\Classes\Wolf.cs" />
+    <Compile Include="Models\Interfaces\IAmphibia.cs" />
+    <Compile Include="Models\Interfaces\IAnimal.cs" />
+    <Compile Include="Models\Interfaces\IBird.cs" />
+    <Compile Include="Models\Interfaces\IFish.cs" />
+    <Compile Include="Models\Interfaces\IHerdAnimal.cs" />
+    <Compile Include="Models\Interfaces\IInsect.cs" />
+    <Compile Include="Models\Interfaces\IMammal.cs" />
+    <Compile Include="Models\Interfaces\IPet.cs" />
+    <Compile Include="Models\Interfaces\IPredator.cs" />
+    <Compile Include="Models\Interfaces\IMarineAnimal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
