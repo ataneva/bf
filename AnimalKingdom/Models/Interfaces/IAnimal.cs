@@ -1,7 +1,7 @@
 ﻿
 namespace AnimalKingdom.Models.Interfaces
 {
-    interface IAnimal
+    public interface IAnimal
     {
         string Name { get; }
         string Picture { get; set; }

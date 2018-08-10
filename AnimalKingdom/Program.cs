@@ -11,6 +11,10 @@ namespace AnimalKingdom
         public static void Main(string[] args)
         {
             var animalList = PopulateList().ToList();
+            
+            //var dog = new Dog(new Animal("Dog"));  Dependency injection
+            //animalList.Add(dog);
+
             var dangerousAnimals = animalList.Where(x => x.IsDangerous);
 
             foreach (var item in dangerousAnimals)
@@ -28,7 +32,8 @@ namespace AnimalKingdom
             yield return new Tarantula("Tarantula");
             yield return new Shark("Shark");
             yield return new Dolphin("Dolphin");
-            yield return new Dog("Dog");
+
+            var dog = new Dog(new Animal("Dog"));
             yield return new Wolf("Wolf");
         }
     }

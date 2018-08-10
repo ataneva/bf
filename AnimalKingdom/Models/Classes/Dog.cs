@@ -3,11 +3,13 @@ using System;
 
 namespace AnimalKingdom.Models.Classes
 {
-    public class Dog  : IPet, IMammal
+    public class Dog
     {
-        public Dog(string name)
+        private IAnimal _animal;
+
+        public Dog(IAnimal animal)
         {
-            this.Name = name;
+            this._animal = animal;
         }
         public bool IsDangerous { get; } = false;
 
@@ -17,7 +19,8 @@ namespace AnimalKingdom.Models.Classes
 
         public void Feed()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Dog is feeded");
+            this._animal.Feed();
         }
     }
 }
